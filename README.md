@@ -62,7 +62,6 @@ media-stack/
 └── /mnt/storage_pool/   <-- *Requires host mounting for bulk media storage*
 ```
 
-> ⚠️ **Data Isolation Rule:** The configuration database folders and media directories are explicitly omitted from Git tracking via the `.gitignore` asset. This ensures your private application tokens, user access logs, and cache files are never pushed to a public GitHub repository.
 
 ---
 
