@@ -4,9 +4,14 @@ A lightweight, fully automated home media server stack deployed using Docker Com
 
 ---
 
-## 🚀 Quick Start (One-Command Deployment)
+## 🚀 Quick Start (Complete Deployment)
 
-To deploy this entire stack on a new server, ensure you have **Docker** and **Docker Compose** installed, then execute the following single-line command:
+### 1. Preparing a Fresh Server (Ubuntu/Debian)
+If you are setting up on a brand-new server, you must install Docker and Docker Compose first. Copy and paste this block to prepare your system:
 
 ```bash
-git clone [https://github.com/h8ntome/media-stack.git](https://github.com/h8ntome/media-stack.git) && cd media-stack && docker compose up -d
+# Update package lists and install Docker + Docker Compose Plugin
+sudo apt update && sudo apt install -y docker.io docker-compose-plugin
+
+# Give your current user permission to run Docker without 'sudo'
+sudo usermod -aG docker $USER && newgrp docker
